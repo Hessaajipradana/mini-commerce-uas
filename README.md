@@ -1,92 +1,75 @@
-📱 Aplikasi E-Commerce Flutter
-👨‍💻 Profil Pengembang
+# 📱 Aplikasi E-Commerce Flutter
 
-Nama: Fatwa Reksa Aji Pradana
-NIM: A11.2022.14393
-Institusi: Universitas Dian Nuswantoro (UDINUS)
-Program Studi: Teknik Informatika
-Mata Kuliah: Pemrograman Mobile
+## 👨‍💻 Profil Pengembang
+- **Nama:** Fatwa Reksa Aji Pradana
+- **NIM:** A11.2022.14393
+- **Institusi:** Universitas Dian Nuswantoro (UDINUS)
+- **Program Studi:** Teknik Informatika
+- **Mata Kuliah:** Pemrograman Mobile
 
-📋 Tentang Proyek
+## 📋 Tentang Proyek
 Proyek ini merupakan implementasi aplikasi e-commerce berbasis Flutter yang dikembangkan sebagai bagian dari tugas akhir mata kuliah Pemrograman Mobile. Aplikasi ini mendemonstrasikan kemampuan dalam pengembangan aplikasi mobile dengan fokus pada:
-🎯 Tujuan Pengembangan
 
-Implementasi desain UI/UX yang responsif dan user-friendly
-Pengembangan sistem input yang efisien dan tervalidasi
-Manajemen navigasi multi-halaman
-Integrasi dengan basis data (lokal dan server)
-Implementasi sistem keamanan dan autentikasi
+### 🎯 Tujuan Pengembangan
+1. Implementasi desain UI/UX yang responsif dan user-friendly
+2. Pengembangan sistem input yang efisien dan tervalidasi
+3. Manajemen navigasi multi-halaman
+4. Integrasi dengan basis data (lokal dan server)
+5. Implementasi sistem keamanan dan autentikasi
 
-✨ Fitur Utama
+### ✨ Fitur Utama
+1. **Sistem Autentikasi**
+   - Registrasi pengguna
+   - Login dengan email/password
+   - Manajemen sesi
+   - Logout
 
-Sistem Autentikasi
+2. **Manajemen Produk**
+   - ListView produk dengan lazy loading
+   - Detail produk
+   - Pencarian dan filter
+   - CRUD operasi (Admin)
 
-Registrasi pengguna
-Login dengan email/password
-Manajemen sesi
-Logout
+3. **Keranjang Belanja**
+   - Tambah/hapus item
+   - Update kuantitas
+   - Kalkulasi total
 
+4. **Profil Pengguna**
+   - Info personal
+   - Riwayat transaksi
+   - Pengaturan akun
 
-Manajemen Produk
+5. **Panel Admin**
+   - Dashboard admin
+   - Manajemen produk
+   - Laporan penjualan
 
-ListView produk dengan lazy loading
-Detail produk
-Pencarian dan filter
-CRUD operasi (Admin)
+### 💡 Spesifikasi Teknis
 
+#### Komponen UI
+- Material Design 3
+- ListView untuk katalog produk
+- Form input tervalidasi
+- Dialog konfirmasi
+- Loading indicators
+- Error handling UI
 
-Keranjang Belanja
+#### Penyimpanan Data
+1. **Lokal Storage**
+   - SharedPreferences untuk user preferences
+   - SQLite untuk cache data
+   - Firebase offline persistence
 
-Tambah/hapus item
-Update kuantitas
-Kalkulasi total
+2. **Server Storage (Firebase)**
+   - Cloud Firestore untuk data utama
+   - Firebase Authentication
+   - Firebase Storage untuk gambar
+   - Realtime Database untuk fitur chat
 
-
-Profil Pengguna
-
-Info personal
-Riwayat transaksi
-Pengaturan akun
-
-
-Panel Admin
-
-Dashboard admin
-Manajemen produk
-Laporan penjualan
-
-
-
-💡 Spesifikasi Teknis
-Komponen UI
-
-Material Design 3
-ListView untuk katalog produk
-Form input tervalidasi
-Dialog konfirmasi
-Loading indicators
-Error handling UI
-
-Penyimpanan Data
-
-Lokal Storage
-
-SharedPreferences untuk user preferences
-SQLite untuk cache data
-Firebase offline persistence
-
-
-Server Storage (Firebase)
-
-Cloud Firestore untuk data utama
-Firebase Authentication
-Firebase Storage untuk gambar
-Realtime Database untuk fitur chat
-
-
-
-Relasi Data
-CopyUsers
+#### Relasi Data
+```
+Users
   └── Orders
        └── OrderItems
             └── Products
@@ -95,9 +78,13 @@ Products
   └── Categories
   └── Reviews
        └── Users
+```
 
-📑 Dokumentasi Proyek
-Spesifikasi Minimum Tercapai:
+
+
+## 📑 Dokumentasi Proyek
+
+### Spesifikasi Minimum Tercapai:
 ✅ Minimal 5 halaman tampilan (Implementasi: 8+ halaman)
 ✅ ListView untuk menampilkan data (Implementasi: Katalog Produk)
 ✅ Sistem autentikasi lengkap (Register, Login, Logout)
@@ -105,6 +92,8 @@ Spesifikasi Minimum Tercapai:
 ✅ Penyimpanan lokal (SharedPreferences & SQLite)
 ✅ Penyimpanan server (Firebase)
 ✅ Relasi data kompleks (Nested Collections di Firestore)
+
+
 
 
 ## 📑 Daftar Isi
