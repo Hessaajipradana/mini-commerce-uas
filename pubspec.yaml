@@ -1,0 +1,30 @@
+name: mini_ecommerce
+description: A simple e-commerce mobile application
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.6.0
+
+dependencies:
+  flutter:
+    sdk: flutter
+  firebase_core: ^3.10.0
+  firebase_auth: ^5.4.0
+  cloud_firestore: ^5.6.1
+  firebase_storage: ^12.4.0
+  shared_preferences: ^2.3.5
+  flutter_secure_storage: ^9.2.4
+  go_router: ^14.6.3
+  provider: ^6.1.2
+  cupertino_icons: ^1.0.8
+  cached_network_image: ^3.4.1
+  http: ^1.2.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
