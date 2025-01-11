@@ -162,7 +162,15 @@ class Product {
   final double price;
   final String imageUrl;
   final int stock;
-}
+
+  Product({
+    required this.id,
+    required this.name,
+    required this.description,
+    required this.price,
+    required this.imageUrl,
+    required this.stock,
+  });
 ```
 
 Fitur utama:
@@ -179,8 +187,16 @@ class CartItem {
   final String productId;
   final int quantity;
   final DateTime createdAt;
-  final DocumentReference productRef;
-}
+  final DocumentReference productRef; // Menyimpan referensi produk
+
+  CartItem({
+    required this.id,
+    required this.userId,
+    required this.productId,
+    required this.quantity,
+    required this.createdAt,
+    required this.productRef,
+  });
 ```
 
 ## 🛠️ Layanan
